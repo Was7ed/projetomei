@@ -1,0 +1,80 @@
+/*#3366cc*/
+
+
+*{
+/*	border: solid black 1px;
+*/	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+header {
+	width: 100vw;
+}
+
+header nav {
+	display: flex;
+	position: relative;
+	width: 100vw;
+	height: 70px;
+	border-radius: 0 0 6px 6px;
+	background-color: #3366cc;
+	color: white;
+	z-index: 10;
+
+}
+
+header nav div{
+	margin-top: 10px;
+}
+
+header nav ul{
+	margin: auto 0 auto auto;
+}
+
+header nav ul li{
+	display: inline;
+	margin: 30px;
+}
+
+
+/* Aqui será feito o estilo da primeira sessão*/
+
+#primeiro div{
+	background-image: url('../_img/foto-slider.jpeg');
+	background-position: center;
+	background-size: cover;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center; 
+	color: white;
+	position: relative;
+	top: -70px;
+	z-index: 1;
+}
+
+#primeiro div h2{
+	margin-top: 250px;
+	font-size: 30px;
+}
+
+#primeiro div h3{
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+#primeiro div button {
+	width: 200px;
+	height: 70px;
+	border-radius: 6px;
+	margin-right:  auto;
+	margin-left: auto;
+	margin-top: 20px;
+	background-color: #3366cc;
+	color: white;
+	font-size: 22px;
+	border:none;
+}
+
