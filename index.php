@@ -5,7 +5,7 @@
 	<header>
 		<nav>
 			<div>
-				<h1>logo</h1>
+				<img src="_img/logo.png" alt="">
 			</div>
 			<ul>
 				<li>HOME</li>
@@ -40,8 +40,8 @@
 		<div id="master-div">
 			<div class="owl-carousel owl-theme slider-carrossel">
 
-			    <div class="item"><img src="_img/example.png" alt=""></div>
-			    <div class="item"><img src="_img/example.png" alt=""></div>
+			    <div class="item"><img src="_img/Gestão.jpg" alt=""></div>
+			    <div class="item"><img src="_img/Financeira.jpg" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
@@ -53,10 +53,26 @@
 			</div>
 		</div>
 
+		<div class="blue-label">
+			<h4>Ganhe tempo, associe-se agora ao Consultoria MEI e ganhe uma equipe de consultores especialistas para lhe ajudar. Isso tudo na palma da sua mão</h4>
+		</div>
+
 	</section>
 
-	<section class="blue-label">
-		<h4>Ganhe tempo, associe-se agora ao Consultoria MEI e ganhe uma equipe de consultores especialistas para lhe ajudar. Isso tudo na palma da sua mão</h4>
+	<section id="terceiro">
+		<div class="celular">
+			<div>
+				
+			</div>
+		</div>
+
+
+		<div class="info">
+			<h3>RH/Pessoal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
+			<button>Saiba Mais</button>
+		</div>
+
 	</section>
 
 
