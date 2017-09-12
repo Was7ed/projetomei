@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Praxis Empresa Jr.">
 	<meta charset="UTF-8">
 	<meta name="keywords" content="gestao, gestão, MEI, consultoria">

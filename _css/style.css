@@ -34,6 +34,12 @@ header nav ul{
 	margin: auto 0 auto auto;
 }
 
+header nav ul a{
+	text-transform: none;
+	text-decoration: none;
+	color: inherit;
+}
+
 header nav ul li{
 	display: inline;
 	margin: 30px;
@@ -43,6 +49,23 @@ header nav div img{
 	max-height: 60px;
 }
 
+.hidden{
+	display: none;
+}
+
+header nav #side_menu{
+}
+
+
+@media screen and (max-width: 699px) {
+	
+	header nav ul{
+		display: none;	
+	}
+
+	
+
+}
 
 /* Aqui será feito o estilo da primeira sessão*/
 

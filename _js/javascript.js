@@ -1,7 +1,7 @@
 
 $('.owl-carousel').owlCarousel({
 	smartSpeed:1000,
-	autoplayTimeout:4000,
+	autoplayTimeout:2000,
 	autoplay:true,
 	center:false,
 	stagePadding:30,
@@ -21,4 +21,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+
 
