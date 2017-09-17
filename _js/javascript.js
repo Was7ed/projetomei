@@ -1,12 +1,12 @@
 
 $('.owl-carousel').owlCarousel({
 	smartSpeed:1000,
-	autoplayTimeout:2000,
 	autoplay:true,
 	center:false,
 	stagePadding:30,
     loop:true,
-	items:1,
+	items:2,
+    slideBy:'page',
     margin:50,
     nav:false,
     responsive:{

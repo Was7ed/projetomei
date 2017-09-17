@@ -2,7 +2,7 @@
 	require_once '_ref/header.php';
  ?>
 
-	<header>
+	<header class="main">
 		<nav>
 			<div>
 				<img src="_img/logo.png" alt="">
@@ -14,7 +14,7 @@
 				<a href="#"><li>Cadastre-se</li></a>
 				<a href="#"><li>Entrar</li></a>
 			</ul>
-			<span class="hidden">
+			<span class="hidden" id="Open">
 				<a href="" onclick="openSideMenu()">
 					<svg width="30" height="30">
            			 	<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
@@ -76,11 +76,77 @@
 
 	</section>
 
-	<section id="terceiro">
+	<section class="telasCelulares esquerdo" id="terceiro">
 		<div class="celular">
-			<div>
+		<img src="_img/celular.png" alt="">
+			<!-- <div>
 				
-			</div>
+			</div> -->
+		</div>
+
+
+		<div class="info">
+			<h3>RH/Pessoal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
+			<button>Saiba Mais</button>
+		</div>
+
+	</section>
+
+	<section class="telasCelulares direito" id="quarto">
+		<div class="info">
+			<h3>RH/Pessoal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
+			<button>Saiba Mais</button>
+		</div>
+
+		<div class="celular">
+		<img src="_img/celular.png" alt="">
+			<!-- <div>
+				
+			</div> -->
+		</div>
+	</section>
+
+	<section class="telasCelulares esquerdo" id="quinto">
+		<div class="celular">
+		<img src="_img/celular.png" alt="">
+			<!-- <div>
+				
+			</div> -->
+		</div>
+
+
+		<div class="info">
+			<h3>RH/Pessoal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
+			<button>Saiba Mais</button>
+		</div>
+
+	</section>
+
+	<section class="telasCelulares direito" id="sexto">
+
+		<div class="info">
+			<h3>RH/Pessoal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
+			<button>Saiba Mais</button>
+		</div>
+
+		<div class="celular">
+		<img src="_img/celular.png" alt="">
+			<!-- <div>
+				
+			</div> -->
+		</div>
+	</section>
+
+	<section class="telasCelulares esquerdo" id="setimo">
+		<div class="celular">
+		<img src="_img/celular.png" alt="">
+			<!-- <div>
+				
+			</div> -->
 		</div>
 
 
