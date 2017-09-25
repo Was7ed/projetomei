@@ -1,7 +1,6 @@
-/*#3366cc*/
 
-
-*{
+@media screen and (max-width: 699px) {
+	*{
 /*	border: solid black 1px;
 */	margin: 0;
 	padding: 0;
@@ -31,8 +30,9 @@ header nav div{
 }
 
 header nav ul{
-	margin: auto 0 auto auto;
+	display: none;	
 }
+
 
 header nav ul a{
 	text-transform: none;
@@ -50,14 +50,31 @@ header nav div img{
 }
 
 header nav span{
-	display: none;
+	display: block;
+	margin: 10px;
+	margin-top: 20px;
+	margin-left: auto;
 }
 
-header nav #side_menu{
-	display: none;
+#side_menu{
+	margin: 0;
+	display: block !important; 
+	position: fixed;
+	z-index: 9999;
+	left: 40vw;
+	background-color: rgba(0,0,0,0.8);
+	height: 100vh;
+	width: 70vw;
+	padding-top: 20px;
+	padding-left: 10px;
+	overflow-x: hidden;
+	transition: 200;
 }
 
-header nav #side_menu{
+#side_menu a{
+		text-decoration: none;
+		text-transform: none;
+		color: #fff;
 }
 
 
@@ -265,28 +282,5 @@ header nav #side_menu{
 #footer #depoimentos #depo-carousel{
 	height: auto;
 }
-
-#footer #footer-footer .footer-text{
-	margin-top: 100px;
-	height: 50px;
-	border-bottom: none;
-}
-
-#footer #footer-footer .footer-text ul{
-	display: inline-block;
-	font-size: 20px;
-	margin: auto;
-}
-
-#footer #footer-footer .footer-text a{
-	text-transform: none;
-	text-decoration: none;
-	color: black;
-
-}
-
-#footer #footer-footer .footer-text li{
-	display: inline;
-	margin-right: 100px;
-	margin-left: 100px;
+	
 }

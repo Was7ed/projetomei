@@ -55,7 +55,7 @@
 			<h2>Porque a consultoria MEI é boa pra você!</h2>
 
 		<div id="master-div">
-			<div class="owl-carousel owl-theme slider-carrossel">
+			<div id="section2-car" class="owl-carousel owl-theme slider-carrossel">
 
 			    <div class="item"><img src="_img/Gestão.jpg" alt=""></div>
 			    <div class="item"><img src="_img/Financeira.jpg" alt=""></div>
@@ -158,6 +158,44 @@
 
 	</section>
 
+	<section id="footer">
+		<div id="depoimentos">
+			<div class="footer-text"><p>Depoimentos</p></div>
+			<div id="depo-carousel">
+				<div id="footer-car" class="owl-theme slider-carrossel owl-carousel">
+				    <div class="item"><img src="_img/Depoimento export.png" alt=""></div>
+				    <div class="item"><img src="_img/Depoimento_export2.png" alt=""></div>
+				    <div class="item"><img src="_img/Depoimento_export3.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div id="novidades">
+			<div class="footer-text"><p>Novidades</p></div>
+			<div id="noticias-carousel">
+				<div id="noticias-car" class="owl-theme slider-carrossel owl-carousel">
+				    <div class="item"><h1>Noticia 1</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+
+				    <div class="item"><h1>Noticia 2</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    
+				    <div class="item"><h1>Noticia 3</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+
+				    <div class="item"><h1>Noticia 4</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+
+				    <div class="item"><h1>Noticia 5</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+
+				    <div class="item"><h1>Noticia 6</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+
+				    <div class="item"><h1>Noticia 7</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-footer">
+			<div class="footer-text"><ul>
+				<a href=""><li>Termos de uso</li></a>
+				<a href=""><li>Politica de privacidade</li></a>
+			</ul></div>
+		</div>
+	</section>
 
 <?php 
 

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="_css/style.css">
+	<link rel="stylesheet" href="_css/style_responsive.css">
 	<title>Consultoria MEI</title>
 </head>
 <body>
