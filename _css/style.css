@@ -239,6 +239,23 @@ header nav #side_menu{
 	float: left;
 }
 
+#bridge-cel {
+	text-align: center;
+}
+
+#bridge-cel button{
+	margin-top: 30px;
+	height: 60px;
+	width: 200px;
+	background-color: #385ea8;
+	border: solid #385ea8 2px;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	margin-right: ;
+	margin-left: auto;
+}
+
 /*Aqui começa o footer*/
 #footer #depoimentos{
 	margin-top: 100px;

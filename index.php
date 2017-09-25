@@ -158,6 +158,12 @@
 
 	</section>
 
+	<section id="bridge-cel">
+		<div class="blue-label"><h4>Faça logo sua inscrição e comece a ter os beneficios que só a consultoria MEI te oferece</h4></div>
+
+		<div><button>INSCREVA-SE</button></div>
+	</section>
+
 	<section id="footer">
 		<div id="depoimentos">
 			<div class="footer-text"><p>Depoimentos</p></div>
