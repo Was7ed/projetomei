@@ -95,7 +95,7 @@
 
 	<section class="telasCelulares direito" id="quarto">
 		<div class="info">
-			<h3>RH/Pessoal</h3>
+			<h3>Financeiro</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
 			<button>Saiba Mais</button>
 		</div>
@@ -118,7 +118,7 @@
 
 
 		<div class="info">
-			<h3>RH/Pessoal</h3>
+			<h3>Fiscal/Tributário</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
 			<button>Saiba Mais</button>
 		</div>
@@ -128,7 +128,7 @@
 	<section class="telasCelulares direito" id="sexto">
 
 		<div class="info">
-			<h3>RH/Pessoal</h3>
+			<h3>Marketing/Estratégia</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
 			<button>Saiba Mais</button>
 		</div>
@@ -151,7 +151,7 @@
 
 
 		<div class="info">
-			<h3>RH/Pessoal</h3>
+			<h3>Treinamento</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, tenetur dolore ducimus. Quae quos beatae laborum voluptatum sequi, ad provident modi accusamus consequatur possimus error voluptatem, minima suscipit culpa. Enim alias eveniet tempore accusantium quaerat, ipsa voluptatem quae saepe aliquid, esse cum corrupti voluptate reprehenderit placeat! Minima perspiciatis, nobis nostrum quam non dolore temporibus, illo ad facere sapiente quaerat. Rerum ipsam et impedit asperiores, velit maiores sunt nam enim numquam minus! Vero nostrum vitae dolor aut eius inventore sint, dolore ipsam deleniti consectetur tenetur!</p>
 			<button>Saiba Mais</button>
 		</div>
