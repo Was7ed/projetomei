@@ -266,6 +266,19 @@ header nav #side_menu{
 	height: auto;
 }
 
+#footer #novidades{
+	margin-top: 100px;
+}
+
+#footer #novidades #noticias-carousel .item{
+	margin-top: 30px;
+	text-align: center;
+}
+
+#footer #novidades #noticias-carousel .item p{
+	margin-top: 10px;
+}
+
 #footer #footer-footer .footer-text{
 	margin-top: 100px;
 	height: 50px;
