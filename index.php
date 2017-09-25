@@ -10,7 +10,7 @@
 			<ul>
 				<a href="index.php"><li>HOME</li></a>
 				<a href="#"><li>NOSSA EMPRESA</li></a>
-				<a href="#"><li>NOVIDADES</li></a>
+				<a href="#novidades"><li>NOVIDADES</li></a>
 				<a href="#"><li>Cadastre-se</li></a>
 				<a href="#"><li>Entrar</li></a>
 			</ul>
@@ -27,7 +27,7 @@
 				<a href="#" onclick="closeSideMenu()">&times;</a>
 				<a href="index.php"><li>HOME</li></a>
 				<a href="#"><li>NOSSA EMPRESA</li></a>
-				<a href="#"><li>NOVIDADES</li></a>
+				<a href="#novidades"><li>NOVIDADES</li></a>
 				<a href="#"><li>Cadastre-se</li></a>
 				<a href="#"><li>Entrar</li></a>
 			</div>
@@ -179,19 +179,19 @@
 			<div class="footer-text"><p>Novidades</p></div>
 			<div id="noticias-carousel">
 				<div id="noticias-car" class="owl-theme slider-carrossel owl-carousel">
-				    <div class="item"><h1>Noticia 1</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 1</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
-				    <div class="item"><h1>Noticia 2</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 2</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 				    
-				    <div class="item"><h1>Noticia 3</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 3</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
-				    <div class="item"><h1>Noticia 4</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 4</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
-				    <div class="item"><h1>Noticia 5</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 5</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
-				    <div class="item"><h1>Noticia 6</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 6</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
-				    <div class="item"><h1>Noticia 7</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
+				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 7</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 				</div>
 			</div>
 		</div>

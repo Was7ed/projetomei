@@ -9,6 +9,10 @@
 	overflow-x: hidden;
 }
 
+*:focus {
+    outline: none;
+}
+
 header {
 	width: 100vw;
 }
@@ -265,7 +269,7 @@ header nav #side_menu{
 .footer-text{
 	margin: 10px;
 	font-size: 400%;
-	height: 200px;
+	height: auto;
 	border-top: solid #a6a6a6 2px;
 	border-bottom: solid #a6a6a6 2px;
 	display: flex;
@@ -275,7 +279,7 @@ header nav #side_menu{
 }
 
 .footer-text p{
-	margin: 50px;
+	margin-left: 30px;
 	color:#385ea8;
 }
 
@@ -319,4 +323,8 @@ header nav #side_menu{
 	display: inline;
 	margin-right: 100px;
 	margin-left: 100px;
+}
+
+#footer #novidades #noticias-carousel .item img{ 
+	margin:20px 0 20px 0;
 }
