@@ -125,17 +125,20 @@ header nav #side_menu{
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	height: 500px;
+	height: ;
 	border: solid #385ea8 1px;
 	border-radius: 4px;
 	width: 95vw;
 	margin-top: 100px;
 	overflow-y: hidden;
-	padding-top: 60px;
+	padding: 30px 0 20px 0;
 }
 
+#segundo .owl-stage{
+
+}
 #segundo .item img{
-	height: 300px;
+	height: 200px;
 	padding: 0;
 	margin: 0;
 }
@@ -164,17 +167,20 @@ header nav #side_menu{
 /*Terceira sessão (onde irão ficar os celulares)*/
 
 .telasCelulares{
-	width: 100vw;
+	height: ;
+	width: ;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
 .telasCelulares .celular{
 	display: flex;
 	float: left;
-	margin-top: 30px;
-	height: 100vh;
-	max-width: 40vw;
+	margin: 30px;
+	height: 330px;
+	width: 170px;
 /*	background-image: url('../_img/celular.png');
 */	background-size: contain;
 	background-repeat: no-repeat;
@@ -198,10 +204,11 @@ header nav #side_menu{
 	text-align: center;
 	border-radius: 5px;
 	margin-right: 140px;
-	margin-top: 100px;
+	margin: 30px;
 	float: right;
-	height: 600px;
-	padding: 20px;
+	height: ;
+	padding: 30px;
+	margin-right: ;
 }
 
 .telasCelulares .info h3{
@@ -229,9 +236,6 @@ header nav #side_menu{
 .direito .celular{
 	display: flex;
 	float: left;
-	margin-top: 30px;
-	height: 100vh;
-	max-width: 40vw;
 /*	background-image: url('../_img/celular.png');
 */	background-size: contain;
 	background-repeat: no-repeat;
