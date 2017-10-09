@@ -152,7 +152,7 @@
 			<div class="footer-text"><p>Depoimentos</p></div>
 			<div id="depo-carousel">
 				<div id="footer-car" class="owl-theme slider-carrossel owl-carousel">
-				    <div class="item"><img src="_img/Depoimento export.png" alt=""></div>
+				    <div class="item"><img src="_img/Depoimento_export1.png" alt=""></div>
 				    <div class="item"><img src="_img/Depoimento_export2.png" alt=""></div>
 				    <div class="item"><img src="_img/Depoimento_export3.png" alt=""></div>
 				</div>

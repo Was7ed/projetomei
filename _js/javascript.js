@@ -27,11 +27,11 @@ $('#footer-car').owlCarousel({
     smartSpeed:1000,
     autoplay:true,
     center:true,
-    stagePadding:300,
+    stagePadding:150,
     loop:true,
-    items:1,
-    slideBy:'page',
-    margin:200,
+    items:3,
+    slideBy:1,
+    margin:150,
     nav:false,
     dots: false,
     responsive:{
@@ -41,12 +41,12 @@ $('#footer-car').owlCarousel({
             stagePadding: 10
         },
         700:{
-            items:1,
+            items:2,
             margin:50,
             stagePadding: 10
         },
         1000:{
-            items:1
+            items:3
         }
     }
 })
