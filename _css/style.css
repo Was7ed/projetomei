@@ -337,3 +337,107 @@ header nav #side_menu{
 #footer #novidades #noticias-carousel .item img{ 
 	margin:20px 0 20px 0;
 }
+
+
+
+/* CSS da página de entrada */
+
+#entrar_container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#login_master{
+	padding: 40px;
+	background-color: rgba(0 , 0 , 0 , 0.2);
+	border-radius: 7px;
+	text-align: center;
+	box-shadow: 6px 6px 5px #888888;
+}
+
+#login_master input{
+	margin-top: 20px;
+	border: none;
+	padding: 10px;
+	width: 300px;
+	border-radius: 3px;
+}
+
+#login_master button{
+	margin-top: 20px;
+	background: none;
+	border: none;
+	background-color: #385ea8;
+	color: white;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+#login_master form a{
+	text-transform: none;
+	text-decoration: none;
+	color: #385ea8;
+	font-size: 12px;
+
+}
+
+#login_master form a p{
+	margin-top: 5px;
+}
+
+
+#cadastro_container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#cadastro_master{
+	padding: 40px;
+	background-color: rgba(0 , 0 , 0 , 0.2);
+	border-radius: 7px;
+	text-align: center;
+	box-shadow: 6px 6px 5px #888888;
+}
+#cadastro_master input{
+	margin-top: 20px;
+	border: none;
+	padding: 10px;
+	width: 300px;
+	border-radius: 3px;
+}
+
+#cadastro_master button{
+	margin-top: 20px;
+	background: none;
+	border: none;
+	background-color: #385ea8;
+	color: white;
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+#cadastro_master form a{
+	text-transform: none;
+	text-decoration: none;
+	color: #385ea8;
+	font-size: 12px;
+
+}
+
+#cadastro_master form a p{
+	margin-top: 5px;
+}
