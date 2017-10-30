@@ -14,10 +14,7 @@
  	</form>
  </div>
 </section>
- <?php 
-	require_once '_ref/footer.php';
-<<<<<<< HEAD
- ?>
-=======
- ?>
->>>>>>> 2468f465415f5d03233325622b1167bb8a2e0669
+
+<?php 
+require_once '_ref/footer.php';
+?>
