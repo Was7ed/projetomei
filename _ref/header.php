@@ -9,13 +9,14 @@
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="_css/style.css">
 	<link rel="stylesheet" href="_css/style_responsive.css">
+  <link rel="stylesheet" href="/_css/bootstrap.css">
 	<title>Consultoria MEI</title>
 </head>
 <body>
 
 
 	<header class="main">
-		<nav>
+		<nav >
 			<div>
 				<img src="_img/logo.png" alt="">
 			</div>
