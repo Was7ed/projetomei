@@ -2,6 +2,39 @@
 	require_once '_ref/header.php';
  ?>
 
+	<header class="main">
+		<nav>
+			<div>
+				<img src="_img/logo.png" alt="">
+			</div>
+			<ul>
+				<a href="index.php"><li>HOME</li></a>
+				<a href="#"><li>NOSSA EMPRESA</li></a>
+				<a href="#novidades"><li>NOVIDADES</li></a>
+				<a href="#"><li>Cadastre-se</li></a>
+				<a href="#"><li>Entrar</li></a>
+			</ul>
+			<span class="hidden" id="Open">
+				<a href="" onclick="openSideMenu()">
+					<svg width="30" height="30">
+           			 	<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          			  	<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+		        	</svg>
+				</a>
+			</span>
+			<div class="hidden" id="side_menu">
+				<a href="#" onclick="closeSideMenu()">&times;</a>
+				<a href="index.php"><li>HOME</li></a>
+				<a href="#"><li>NOSSA EMPRESA</li></a>
+				<a href="#novidades"><li>NOVIDADES</li></a>
+				<a href="#"><li>Cadastre-se</li></a>
+				<a href="#"><li>Entrar</li></a>
+			</div>
+		</nav>
+
+	</header>
+
 	<section id="primeiro">
 		<div id="img-front">
 
