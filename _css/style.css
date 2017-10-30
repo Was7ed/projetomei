@@ -61,7 +61,7 @@ header nav #side_menu{
 }
 
 header nav #side_menu{
-}*/
+}
 
 
 /* Aqui será feito o estilo da primeira sessão*/
@@ -75,7 +75,7 @@ header nav #side_menu{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center;
+	text-align: center; 
 	color: white;
 	position: relative;
 	top: ;
@@ -84,12 +84,12 @@ header nav #side_menu{
 
 #primeiro div h2{
 	margin-top: 250px;
-	font-size: 2em;
+	font-size: 30px;
 }
 
 #primeiro div h3{
 	margin-top: 15px;
-	font-size: 1.2em;
+	font-size: 20px;
 }
 
 #primeiro div button {
@@ -334,7 +334,7 @@ header nav #side_menu{
 	margin-left: 100px;
 }
 
-#footer #novidades #noticias-carousel .item img{
+#footer #novidades #noticias-carousel .item img{ 
 	margin:20px 0 20px 0;
 }
 
