@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once '_ref/header.php';
  ?>
 
@@ -11,8 +11,8 @@
 				<a href="index.php"><li>HOME</li></a>
 				<a href="#"><li>NOSSA EMPRESA</li></a>
 				<a href="#novidades"><li>NOVIDADES</li></a>
-				<a href="#"><li>Cadastre-se</li></a>
-				<a href="#"><li>Entrar</li></a>
+				<a href="cadastro.php"><li>Cadastre-se</li></a>
+				<a href="entrar.php"><li>Entrar</li></a>
 			</ul>
 			<span class="hidden" id="Open">
 				<a href="" onclick="openSideMenu()">
@@ -44,12 +44,12 @@
 
 			<button id="btn-mais">SAIBA MAIS</button>
 
-		</div>		
+		</div>
 	</section>
 
 
 	<section id="segundo">
-		
+
 		<div class="container">
 
 			<h2>Porque a consultoria MEI é boa pra você!</h2>
@@ -65,7 +65,7 @@
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
-			    
+
 
 			</div>
 		</div>
@@ -80,7 +80,7 @@
 		<div class="celular">
 		<img src="_img/celular.png" alt="">
 			<!-- <div>
-				
+
 			</div> -->
 		</div>
 
@@ -103,7 +103,7 @@
 		<div class="celular">
 		<img src="_img/celular.png" alt="">
 			<!-- <div>
-				
+
 			</div> -->
 		</div>
 	</section>
@@ -112,7 +112,7 @@
 		<div class="celular">
 		<img src="_img/celular.png" alt="">
 			<!-- <div>
-				
+
 			</div> -->
 		</div>
 
@@ -136,7 +136,7 @@
 		<div class="celular">
 		<img src="_img/celular.png" alt="">
 			<!-- <div>
-				
+
 			</div> -->
 		</div>
 	</section>
@@ -165,7 +165,7 @@
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 1</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 2</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
-				    
+
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 3</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 4</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
@@ -186,7 +186,7 @@
 		</div>
 	</section>
 
-<?php 
+<?php
 
 	require_once '_ref/footer.php';
 
