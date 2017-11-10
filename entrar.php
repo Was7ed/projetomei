@@ -40,9 +40,15 @@
 </section>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  <?php 
 	require_once '_ref/footer.php';
  ?>
+=======
+<?php 
+require_once '_ref/footer.php';
+?>
+>>>>>>> c7c726bf4a28c9d3d8c8e4243f2da465fe221eff
 =======
 <?php 
 require_once '_ref/footer.php';
