@@ -8,41 +8,44 @@
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="_css/style.css">
-	<link rel="stylesheet" href="_css/style_responsive.css">
+	<!-- <link rel="stylesheet" href="_css/style_responsive.css"> -->
+  <link rel="stylesheet" href="_css/navbar-reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="_css/navbar-style.css"> <!-- Resource style -->
+	<script src="_js/modernizr.js"></script> <!-- Modernizr -->
 	<title>Consultoria MEI</title>
 </head>
 <body>
 
 
-	<header class="main">
-		<nav>
-			<div>
-				<img src="_img/logo.png" alt="">
-			</div>
-			<ul>
-				<a href="index.php"><li>HOME</li></a>
-				<a href="#"><li>NOSSA EMPRESA</li></a>
-				<a href="#novidades"><li>NOVIDADES</li></a>
-				<a href="cadastro.php"><li>Cadastre-se</li></a>
-				<a href="entrar.php"><li>Entrar</li></a>
-			</ul>
-			<span class="hidden" id="Open">
-				<a href="" onclick="openSideMenu()">
-					<svg width="30" height="30">
-           			 	<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-          			  	<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-          				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-		        	</svg>
-				</a>
-			</span>
-			<div class="hidden" id="side_menu">
-				<a href="#" onclick="closeSideMenu()">&times;</a>
-				<a href="index.php"><li>HOME</li></a>
-				<a href="#"><li>NOSSA EMPRESA</li></a>
-				<a href="#novidades"><li>NOVIDADES</li></a>
-				<a href="#"><li>Cadastre-se</li></a>
-				<a href="#"><li>Entrar</li></a>
-			</div>
-		</nav>
+  <header class="cd-main-header">
+		<a class="cd-logo" href="#0"><img src="_img/logo.png" alt="Logo"></a>
 
+		<ul class="cd-header-buttons">
+			<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+		</ul> <!-- cd-header-buttons -->
 	</header>
+
+	<div class="cd-overlay"></div>
+
+	<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			<li>
+				<a href="#">HOME</a>
+			</li>
+
+			<li>
+				<a href="#">NOSSA EMPRESA</a>
+			</li>
+
+			<li>
+				<a href="#">NOVIDADES</a>
+			</li>
+
+			<li><a href="#">Cadastre-se</a></li>
+
+			<li><a href="#">Entrar</a></li>
+
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+  <main class="cd-main-content">
+		<!-- your content here -->

@@ -1,4 +1,5 @@
 <?php 
+	require_once 'conexao.php';
 	require_once '_ref/header.php';
  ?>
 
@@ -13,7 +14,6 @@
 
 		</div>		
 	</section>
-
 
 	<section id="segundo">
 		
@@ -46,9 +46,7 @@
 	<section class="telasCelulares esquerdo" id="terceiro">
 		<div class="celular">
 		<img src="_img/celular.png" alt="">
-			<!-- <div>
-				
-			</div> -->
+
 		</div>
 
 

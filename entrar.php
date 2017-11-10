@@ -1,19 +1,50 @@
 <?php 
+	require_once 'conexao.php';
 	require_once '_ref/header.php';
- ?>
+
+	if(isset($_POST['bt_enviar'])){
+
+		$ulog  = $_POST['login'];
+		$upass = $_POST['pass'];
+
+		if($login->login($ulog, $upass)){
+			header('location: chat.php');
+		}
+		else{
+		?>
+			<h3>TENTE NOVAMENTE</h3>
+		<?php
+		}
+
+	}
+
+?>
 
 <section id="entrar_container">
  <div id="login_master">
  	<h1>ENTRAR</h1>
  	<form method="post" action="">
- 		<input type="text" name="login_enter" placeholder="Login" required><br>
- 		<input required type="password" name="senha_entrar" placeholder="Senha"><br>
- 		<a href=""><p>Esqueceu a senha</p></a>
- 		<button type="submit">Enviar</button>
- 		<a href=""><p>Não é cadastrado? CADASTRE-SE AQUI</p></a>
+
+ 		<input required="Ponha seu email" type="text" name="login" placeholder="Login"><br>
+
+ 		<input required="Ponha sua senha" type="password" name="pass" placeholder="Senha"><br>
+ 		
+ 		<a href="recover.php"><p>Esqueceu a senha</p></a>
+ 		 		
+ 		<button type="submit" name="bt_enviar">Enviar</button>
+
+ 		<a href="cadastro.php"><p>Não é cadastrado? CADASTRE-SE AQUI</p></a>
  	</form>
+
  </div>
 </section>
+
+<<<<<<< HEAD
  <?php 
 	require_once '_ref/footer.php';
  ?>
+=======
+<?php 
+require_once '_ref/footer.php';
+?>
+>>>>>>> c7c726bf4a28c9d3d8c8e4243f2da465fe221eff

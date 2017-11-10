@@ -13,7 +13,7 @@
     outline: none;
 }
 
-header {
+/*header {
 	width: 100vw;
 }
 
@@ -62,7 +62,7 @@ header nav #side_menu{
 
 header nav #side_menu{
 }
-
+*/
 
 /* Aqui será feito o estilo da primeira sessão*/
 
@@ -75,7 +75,7 @@ header nav #side_menu{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center; 
+	text-align: center;
 	color: white;
 	position: relative;
 	top: ;
@@ -334,8 +334,9 @@ header nav #side_menu{
 	margin-left: 100px;
 }
 
-#footer #novidades #noticias-carousel .item img{ 
+#footer #novidades #noticias-carousel .item img{
 	margin:20px 0 20px 0;
+
 }
 
 
@@ -440,4 +441,5 @@ header nav #side_menu{
 
 #cadastro_master form a p{
 	margin-top: 5px;
+>>>>>>> parent of b343435... Tentativa de colocar o bootstrap
 }
