@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once '_ref/header.php';
  ?>
 
@@ -11,12 +11,12 @@
 
 			<button id="btn-mais">SAIBA MAIS</button>
 
-		</div>		
+		</div>
 	</section>
 
 
 	<section id="segundo" class="">
-		
+
 		<div class="container">
 
 			<h2>Porque a consultoria MEI é boa pra você!</h2>
@@ -32,7 +32,7 @@
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
 			    <div class="item"><img src="_img/example.png" alt=""></div>
-			    
+
 
 			</div>
 		</div>
@@ -43,13 +43,18 @@
 
 	</section>
 
+	<!-- Aqui começa as telas dos celulares
+		*
+		*
+		*
+ 	-->
 	<section class="telasCelulares esquerdo col-xs-offset-1 col-xs-10" id="terceiro">
 		<div class="celular col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-2" >
-			<img class="img-responsive pull-left" src="_img/celular.png" alt="">
+			<img class="img-responsive" src="_img/celular.png" alt="">
 		</div>
 
 
-		<div class="info pull-right col-xs-12 col-md-7">
+		<div class="info col-xs-offset-0 col-xs-12 col-md-7">
 			<h3>Pessoal</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, </p>
 			<button>Saiba Mais</button>
@@ -57,28 +62,27 @@
 
 	</section>
 
-	<section class="telasCelulares direito col-xs-offset-1 col-xs-10" id="quarto">
-		<div class="info col-xs-offset-1 col-xs-10 col-md-7 pull-left">
+	<section class="telasCelulares col-xs-offset-1 col-xs-10" id="quarto">
+		<div class="celular direito col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-2">
+		<img class="img-responsive" src="_img/celular.png" alt="">
+			<!-- <div>
+
+			</div> -->
+		</div>
+
+		<div class="info col-xs-offset-1 col-xs-10 col-md-7">
 			<h3>Financeiro</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, </p>
 			<button>Saiba Mais</button>
-		</div>
-
-		<div class="celular col-md-2 col-md-offset-1">
-		<img class="img-responsive pull-right" src="_img/celular.png" alt="">
-			<!-- <div>
-				
-			</div> -->
 		</div>
 	</section>
 
 	<section class="telasCelulares esquerdo col-xs-offset-1 col-xs-10" id="quinto">
 		<div class="celular col-xs-10 col-xs-offset-1 col-md-offset-0 col-md-2">
-			<img class="img-responsive pull-left" src="_img/celular.png" alt="">
+			<img class="img-responsive" src="_img/celular.png" alt="">
 		</div>
 
-
-		<div class="info pull-right col-xs-12 col-md-7">
+		<div class="info col-xs-offset-1 col-xs-10 col-md-7">
 			<h3>Fiscal</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, </p>
 			<button>Saiba Mais</button>
@@ -86,15 +90,15 @@
 
 	</section>
 
-	<section class="telasCelulares direito col-xs-offset-1 col-xs-10" id="sexto">
-		<div class="info col-xs-offset-1 col-xs-10 col-md-7 pull-left">
+	<section class="telasCelulares col-xs-offset-1 col-xs-10" id="sexto">
+		<div class="celular direito col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-2">
+			<img class="img-responsive" src="_img/celular.png" alt="">
+		</div>
+
+		<div class="info col-xs-offset-1 col-xs-10 col-md-7">
 			<h3>Marketing</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rem laborum beatae culpa a reiciendis esse odit iure officia fugit, deleniti quos fugiat nulla praesentium, </p>
 			<button>Saiba Mais</button>
-		</div>
-
-		<div class="celular col-md-2 col-md-offset-1">
-			<img class="img-responsive pull-right" src="_img/celular.png" alt="">
 		</div>
 	</section>
 
@@ -122,7 +126,7 @@
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 1</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 2</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
-				    
+
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 3</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
 
 				    <div class="item"><img src="_img/noticias.png" alt=""><h1>Noticia 4</h1><p><span class="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, quas, doloremque voluptates, numquam, tenetur quod asperiores provident eos sunt amet totam ducimus consequatur esse magnam id temporibus sed laudantium.</span></p></div>
@@ -136,14 +140,14 @@
 			</div>
 		</div>
 		<div id="footer-footer">
-			<div class="footer-text"><ul>
+			<div class="col-xs-12 footer-text"><ul>
 				<a href=""><li>Termos de uso</li></a>
 				<a href=""><li>Politica de privacidade</li></a>
 			</ul></div>
 		</div>
-	</section> 
+	</section>
 
-<?php 
+<?php
 
 	require_once '_ref/footer.php';
 

@@ -167,7 +167,7 @@ nav a:hover{
 /*Terceira sessão (onde irão ficar os celulares)*/
 
 .telasCelulares{
-	margin-top: 20px;
+	margin-top: 40px;
 	height: ;
 	width: ;
 	display: block;
@@ -176,8 +176,9 @@ nav a:hover{
 }
 
 
-.telasCelulares .celular{
-	float: left;
+.telasCelulares img{
+	max-height: 310px;
+	float: ;
 	height: auto;
 	/*display: flex;
 	margin: 30px;
@@ -188,8 +189,8 @@ nav a:hover{
 	z-index: 1;*/
 }
 
-.telasCelulares .celular img{
-	height: ; 
+.telasCelulares .direito{
+	float: right;
 }
 
 /*.telasCelulares .celular div{
@@ -207,10 +208,8 @@ nav a:hover{
 	border: solid #385ea8 1px;
 	text-align: center;
 	border-radius: 5px;
-	margin-right: 140px;
-	margin: 30px;
 	float: right;
-	height: ;
+	max-height: 310px ;
 	padding: 30px;
 	margin-right: ;
 }
@@ -318,6 +317,7 @@ nav a:hover{
 }
 
 #footer #footer-footer .footer-text{
+	margin: auto;
 	margin-top: 100px;
 	height: 50px;
 	border-bottom: none;
@@ -338,8 +338,6 @@ nav a:hover{
 
 #footer #footer-footer .footer-text li{
 	display: inline;
-	margin-right: 100px;
-	margin-left: 100px;
 }
 
 #footer #novidades #noticias-carousel .item img{
@@ -349,7 +347,11 @@ nav a:hover{
 
 
 
-/* CSS da página de entrada */
+/*
+***********************************************
+***** CSS das páginas de login e cadastro *****
+***********************************************
+ */
 
 #entrar_container{
 	height: 100vh;
@@ -452,6 +454,12 @@ nav a:hover{
 }
 
 
+/*
+***************************************************
+***** INICIO DO CSS RESPONSIVO PARA CELULARES *****
+***************************************************
+*/
+
 @media (max-width: 768px) {
     #primeiro div h2{
 		font-size: 20px;
@@ -495,8 +503,13 @@ nav a:hover{
 		font-size: 10px;
 	}
 
+	.telasCelulares .direito{
+		float: none;
+	}
+
 	.telasCelulares .info{
 		padding: 10px !important;
+		float:center;
 		margin-top: 15px ;
 		display: flex;
 		flex-direction: column;
@@ -505,7 +518,6 @@ nav a:hover{
 		border: solid #385ea8 1px;
 		text-align: center;
 		border-radius: 5px;
-		float: left;
 		padding: 30px;
 	}
 
@@ -543,7 +555,7 @@ nav a:hover{
 	.footer-text{
 		margin: 10px;
 		margin-top: 20px;
-		font-size: 30px;
+		font-size: 28px;
 		height: auto;
 		border-top: solid #a6a6a6 2px;
 		border-bottom: solid #a6a6a6 2px;
@@ -553,12 +565,29 @@ nav a:hover{
 
 	}
 
-	.footer-text p{
-		margin-left: 10px;
-		color:#385ea8;
+	#footer #footer-footer .footer-text{
+		margin-top: 100px;
+		height: 50px;
+		border-bottom: none;
+	}
+
+	#footer #footer-footer .footer-text ul{
+		display: inline;
+		font-size: 14px;
+		margin: auto;
+	}
+
+	#footer #footer-footer .footer-text a{
+		text-transform: none;
+		text-decoration: none;
+		color: black;
+	}
+
+	#footer #footer-footer .footer-text li{
+		margin: 0;
 	}
 }
 
 @media (max-width: 992px) {
-    
+
 }
