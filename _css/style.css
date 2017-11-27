@@ -6,69 +6,61 @@
 */	margin: 0;
 	padding: 0;
 	font-family: arial;
-	overflow-x: hidden;
 }
 
 *:focus {
     outline: none;
 }
 
-/*header {
+body{
+	overflow-x: hidden;
 	width: 100vw;
 }
 
-header nav {
-	display: flex;
-	position: fixed;
-	width: 100vw;
-	height: 60px;
-	background-color: #385ea8;
-	color: white;
-	z-index: 10;
-	box-shadow: 0px 1px 10px #000;
+nav a{
+	color: #fff !important;
 }
 
-header nav div{
-	margin-top: 5px;
+nav a:hover{
+	background-color: #3a4ec1 !important;
+}
+
+.navbar-inverse{
+	background-color: #385ea8 !important;
+}
+
+.navbar-toggle{
+	border-color: white !important;
+}
+
+.navbar-toggle:hover{
+	background-color: rgba(0,0,0,0.2)!important;
+}
+
+.navbar-brand {
+	padding: 0!important;
 	margin-left: 10px;
+	margin-right: 20px;
 }
 
-header nav ul{
-	margin: auto 0 auto auto;
+.navbar-brand img{
+	height: 50px;
 }
 
-header nav ul a{
-	text-transform: none;
-	text-decoration: none;
-	color: inherit;
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -0px!important;
 }
 
-header nav ul li{
-	display: inline;
-	margin: 30px;
-}
-
-header nav div img{
-	max-height: 50px;
-}
-
-header nav span{
-	display: none;
-}
-
-header nav #side_menu{
-	display: none;
-}
-
-header nav #side_menu{
-}
-*/
 
 /* Aqui será feito o estilo da primeira sessão*/
 
+#primeiro{
+	width: 100vw;
+}
+
 #primeiro div{
-	margin-top: 1px;
-	background-image: url('../_img/landing-background-logo.jpg');
+/*	margin-top: 1px;
+*/	background-image: url('../_img/landing-background-logo.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
@@ -105,12 +97,17 @@ header nav #side_menu{
 	border:none;
 }
 
+#primeiro div button:hover {
+	background-color: #3a4ec1;
+}
+
 
 
 /*Inicio da segunda sessão */
 
 #segundo .container {
-	max-width: 100vw;
+	padding: 0;
+	width: 100%;
 }
 
 #segundo .container h2{
@@ -121,7 +118,9 @@ header nav #side_menu{
 }
 
 #segundo .container #master-div{
-	display: flex;
+	padding: 0;
+	margin: 0;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -129,7 +128,7 @@ header nav #side_menu{
 	height: ;
 /*	border: solid #385ea8 1px;
 */	border-radius: 4px;
-	width: 100vw;
+	width: ;
 	margin-top: 100px;
 	overflow-y: hidden;
 	/*padding: 30px 0 20px 0;*/
@@ -157,7 +156,7 @@ header nav #side_menu{
 	margin: auto;
 	margin-top: 30px;
 	height: auto;
-	padding: 20px;
+	padding: 10px;
 	width: 95vw;
 	border-radius: 5px;
 	background-color: #385ea8;
@@ -168,25 +167,29 @@ header nav #side_menu{
 /*Terceira sessão (onde irão ficar os celulares)*/
 
 .telasCelulares{
+	margin-top: 20px;
 	height: ;
 	width: ;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	align-items: ;
+	justify-content: ;
 }
 
 
 .telasCelulares .celular{
-	display: flex;
 	float: left;
+	height: auto;
+	/*display: flex;
 	margin: 30px;
-	height: 330px;
 	width: 170px;
-/*	background-image: url('../_img/celular.png');
-*/	background-size: contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	margin-left: 30px;
-	z-index: 1;
+	z-index: 1;*/
+}
+
+.telasCelulares .celular img{
+	height: ; 
 }
 
 /*.telasCelulares .celular div{
@@ -234,18 +237,24 @@ header nav #side_menu{
 	font-size: 20px;
 }
 
-.direito .celular{
-	display: flex;
-	float: left;
-/*	background-image: url('../_img/celular.png');
-*/	background-size: contain;
+.telasCelulares .info button:hover{
+	background-color: #385ea8;
+	color: white;
+}
+
+/*.direito .celular{
+	height: auto;
+	display: block;
+	float: ;
+	background-image: url('../_img/celular.png');
+	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 30px ;
 	z-index: 1;
-}
+}*/
 
 .direito .info{
-	float: left;
+	float: ;
 }
 
 #bridge-cel {
@@ -267,7 +276,7 @@ header nav #side_menu{
 
 /*Aqui começa o footer*/
 #footer #depoimentos .owl-item {
-	display: flex;
+	display: block;
 	justify-content: center;
 }
 
@@ -281,7 +290,7 @@ header nav #side_menu{
 	height: auto;
 	border-top: solid #a6a6a6 2px;
 	border-bottom: solid #a6a6a6 2px;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 
@@ -295,7 +304,6 @@ header nav #side_menu{
 #footer #depoimentos #depo-carousel{
 	height: auto;
 }
-
 #footer #novidades{
 	margin-top: 100px;
 }
@@ -441,5 +449,116 @@ header nav #side_menu{
 
 #cadastro_master form a p{
 	margin-top: 5px;
->>>>>>> parent of b343435... Tentativa de colocar o bootstrap
+}
+
+
+@media (max-width: 768px) {
+    #primeiro div h2{
+		font-size: 20px;
+	}
+
+	#primeiro div h3{
+		font-size: 13px;
+	}
+
+	#primeiro div button {
+		width: 150px;
+		height: 50px;
+		border-radius: 6px;
+		margin-right:  auto;
+		margin-left: auto;
+		margin-top: 20px;
+		background-color: #385ea8;
+		color: white;
+		font-size: 17px;
+		border:none;
+	}
+
+	#segundo .container h2{
+		font-size: 24px;
+	}
+
+	#segundo .container #master-div{
+		margin-top: 20px;
+	}
+
+	.blue-label{
+		margin-top: 30px;
+		height: auto;
+		padding: 2px;
+		width: 95vw;
+		text-align: center;
+		color: white;
+	}
+
+	.blue-label h4{
+		font-size: 10px;
+	}
+
+	.telasCelulares .info{
+		padding: 10px !important;
+		margin-top: 15px ;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: solid #385ea8 1px;
+		text-align: center;
+		border-radius: 5px;
+		float: left;
+		padding: 30px;
+	}
+
+	.telasCelulares .info h3{
+		margin-bottom: auto;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.telasCelulares .info p{
+		margin-bottom: auto;
+		font-size: 12px;
+	}
+
+	.telasCelulares .info button{
+		margin-top: 30px;
+		height: 25px;
+		width: 120px;
+		background-color: #385ea8;
+		border: solid #385ea8 2px;
+		color: #fff;
+		font-size: 13px;
+	}
+
+	.telasCelulares .info button:hover{
+		margin-top: 30px;
+		height: 25px;
+		width: 120px;
+		background-color: white;
+		border: solid #385ea8 2px;
+		color: #385ea8;
+		font-size: 13px;
+	}
+
+	.footer-text{
+		margin: 10px;
+		margin-top: 20px;
+		font-size: 30px;
+		height: auto;
+		border-top: solid #a6a6a6 2px;
+		border-bottom: solid #a6a6a6 2px;
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	.footer-text p{
+		margin-left: 10px;
+		color:#385ea8;
+	}
+}
+
+@media (max-width: 992px) {
+    
 }
