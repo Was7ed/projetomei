@@ -4,23 +4,25 @@
 
 	if(isset($_POST['bt_enviar'])){
 
-		$ulog  = $_POST['login'];
-		$upass = $_POST['pass'];
+		$log  = $_POST['login'];
+		$pass = $_POST['pass'];
 
-		if($login->login($ulog, $upass)){
-			header('location: chat.php');
+		if($login->logincon($log,$pass)){
+			header('location: consu.php');
+		}
+		else if($login->loginadm($log,$pass)){
+			header('location: adm.php');
 		}
 		else{
-		?>
-			<h3>TENTE NOVAMENTE</h3>
-		<?php
+		?><h3>TENTE NOVAMENTE</h3><?php
 		}
 	}
+
 ?>
 
 <section id="entrar_container">
  <div id="login_master">
- 	<h1>ENTRAR</h1>
+ 	<h1>LOGUE AQUI</h1>
  	<form method="post" action="">
 
  		<input required="Ponha seu email" type="text" name="login" placeholder="Login"><br>
@@ -36,6 +38,7 @@
 
  </div>
 </section>
+
  <?php 
 	require_once '_ref/footer.php';
  ?>
