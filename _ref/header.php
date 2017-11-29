@@ -8,44 +8,37 @@
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="_media/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="_css/style.css">
+	<link rel="stylesheet" href="_media/bootstrap/css/bootstrap.css">
 	<!-- <link rel="stylesheet" href="_css/style_responsive.css"> -->
-  <link rel="stylesheet" href="_css/navbar-reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="_css/navbar-style.css"> <!-- Resource style -->
-	<script src="_js/modernizr.js"></script> <!-- Modernizr -->
-	<title>Consultoria MEI</title>
+<!-- 	<script src="_js/modernizr.js"></script> 
+ -->	<title>Consultoria MEI</title>
 </head>
 <body>
-
-
-  <header class="cd-main-header">
-		<a class="cd-logo" href="#0"><img src="_img/logo.png" alt="Logo"></a>
-
-		<ul class="cd-header-buttons">
-			<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
-		</ul> <!-- cd-header-buttons -->
-	</header>
-
-	<div class="cd-overlay"></div>
-
-	<nav class="cd-nav">
-		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-			<li>
-				<a href="#">HOME</a>
-			</li>
-
-			<li>
-				<a href="#">NOSSA EMPRESA</a>
-			</li>
-
-			<li>
-				<a href="#">NOVIDADES</a>
-			</li>
-
-			<li><a href="#">Cadastre-se</a></li>
-
-			<li><a href="#">Entrar</a></li>
-
-		</ul> <!-- primary-nav -->
-	</nav> <!-- cd-nav -->
-  <main class="cd-main-content">
-		<!-- your content here -->
+	<header>
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<img src="_img/logo.png" alt="Logo da empresa">
+		      </a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.php">HOME</a></li>
+		        <li><a href="#">NOSSA EMPRESA</a></li>
+		        <li><a href="#">NOVIDADES</a></li> 
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="cadastro.php"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
+		        <li><a href="entrar.php"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+    </header>
+  
