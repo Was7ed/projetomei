@@ -5,17 +5,11 @@
 	// TESTEANDO A EXISTENCIA - LOGOUT
 	if($login->islogin()){
 	}else{ header('location: entrar.php');}
-	// TESTEANDO A EXISTENCIA
-	if($login->islogin()){
-	}else{
-		header('location: entrar.php');
-	}
 	//MANIPULANDO
 	if(isset($_POST['bt-logout'])){
 		$login->logout();
 		header('location: entrar.php');
 	}
-	$test="";
 	$user= $login->user();
 	$casoRow="";
 	$caso="";
@@ -25,7 +19,7 @@
 	}
 
 	if(isset($_POST['bt-enviar']) && isset($_SESSION['case'])){
- 		$mtxt= $_POST['msg'];
+ 		$mtxt= $_POST['msg'] . "\n";
  		if(strlen($mtxt) < 144){
  			$ps->inserir($mtxt, $_SESSION['case']);
  			echo 'texto enviado';
@@ -40,11 +34,11 @@
 		<button type="submit" name="bt-abrir">ABRIR</button><br>
 		<?php 														//PARA NÃO REPETIR AS CHEKBOXSES
 			$test=$ps->casoha($caso,$_SESSION['user']);
-			echo $test;
 			if(isset($_POST['bt-abrir']) && isset($_POST['check'])){
-				unset($_SESSION['case']);
+				
 				if($test)
 			 	{
+			 		unset($_SESSION['case']);
 					$ps->abrir($caso,$_SESSION['user']);
 				}
 				else{ ?>
@@ -68,8 +62,19 @@
 	</form>
 
 	<div style="border-color: solid-black"><?php
-		if(isset($_SESSION['case'])){
-			$ps->showmsg($_SESSION['case']);
+		if(isset($_SESSION['case']) && isset($_POST['bt-abrir'])){
+
+			$stmt= $DB_con->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ORDER BY msg_hms");
+			$stmt->execute(array(':caso'=>$_SESSION['case']));
+
+			foreach ($stmt as $row){
+				print $row['msg_txt'] ."<br>";	
+
+			// while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			// 	print $row['msg_txt']."\t";
+			// }
+			}
+
 		}
 	?></div>
 

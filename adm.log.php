@@ -17,7 +17,6 @@
 		?><h3>TENTE NOVAMENTE</h3><?php
 		}
 	}
-
 ?>
 
 <section id="entrar_container">
@@ -38,7 +37,6 @@
 
  </div>
 </section>
-
  <?php 
 	require_once '_ref/footer.php';
  ?>

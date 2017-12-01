@@ -26,19 +26,20 @@ class Posave{
     	}	 
 	}
 
-	public function showmsg($casoRow)
+	/*public function showmsg($casoRow)								NÃO ESTÁ SENDO USADO NO MOMENTO
 	{
 		try{
-			$stmt= $this->db->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ");
+			$stmt= $this->db->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ORDER BY msg_hms");
 			$stmt->execute(array(':caso'=>$casoRow));
-			foreach ($stmt as $msgRow);
-			return print $msgRow['msg_txt']."\n";
+			while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+				return  $row['msg_txt'];
+			}
 		}
 		catch(PDOException $e){
 			echo $e->getMessage(); 
 		}
 		
-	}
+	}*/
 
 
 /*           **********************************************************************************
@@ -66,8 +67,8 @@ class Posave{
 	{
 		try{
 
-			$stmt= $this->db->prepare("SELECT * FROM caso WHERE user_id=:uid OR ed_id=:area OR ass_end=:fim LIMIT 1");
-    		$stmt->execute(array(':uid'=>$uid, ':area'=> $area, ':fim'=>""));
+			$stmt= $this->db->prepare("SELECT * FROM caso WHERE user_id=:uid AND ed_id=:area AND ass_end IS NULL LIMIT 1");
+    		$stmt->execute(array(':uid'=>$uid, ':area'=> $area));
     		$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
 
     		if($stmt->rowCount() > 0){
@@ -83,18 +84,20 @@ class Posave{
 	public function casoha($area,$uid){
 		try{
 
-			$stmt= $this->db->prepare("SELECT * FROM caso WHERE user_id=:uid AND ed_id=:area AND ass_end=:fim LIMIT 1");
-    		$stmt->execute(array(':uid'=>$uid, ':area'=> $area, ':fim'=>""));
+			$stmt= $this->db->prepare("SELECT * FROM caso WHERE user_id=:uid AND ed_id=:area  AND ass_end IS NULL");
+    		$stmt->execute(array(':uid'=>$uid, ':area'=> $area));
     		$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
     		
     		if($stmt->rowCount() != 0){
-				return '1';
+				return true;
+				echo 's';	
 			}
 		}
 		catch(PDOException $e){
       		echo $e->getMessage();
     	}
-    	return '0';
+    	echo 'n';
+    	//return '0';
 	}
 
 
