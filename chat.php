@@ -19,7 +19,7 @@
 	}
 
 	if(isset($_POST['bt-enviar']) && isset($_SESSION['case'])){
- 		$mtxt= $_POST['msg'] . "\n";
+ 		$mtxt= $_POST['msg'];
  		if(strlen($mtxt) < 144){
  			$ps->inserir($mtxt, $_SESSION['case']);
  			echo 'texto enviado';
@@ -35,11 +35,9 @@
 		<?php 														//PARA NÃO REPETIR AS CHEKBOXSES
 			$test=$ps->casoha($caso,$_SESSION['user']);
 			if(isset($_POST['bt-abrir']) && isset($_POST['check'])){
-				
 				if($test)
 			 	{
-			 		unset($_SESSION['case']);
-					$ps->abrir($caso,$_SESSION['user']);
+			 		$ps->abrir($caso,$_SESSION['user']);
 				}
 				else{ ?>
 					<h4>VOCÊ NÃO TEM UM CASO ABERTO</h4>
@@ -48,7 +46,8 @@
 				<?php }
 			}	
 			if(isset($_POST['bt-caso']) && isset($_POST['check']) && !$test){
-				$ps->novocaso($caso,  $_SESSION['user']);
+				unset($_SESSION['case']);
+				$ps->novocaso($_POST['check'],  $_SESSION['user']);
 			}	
 		?>
 
@@ -61,18 +60,14 @@
 		<input type="radio" name="check" value="6">financeiro<br>
 	</form>
 
-	<div style="border-color: solid-black"><?php
+	<div ><?php
 		if(isset($_SESSION['case']) && isset($_POST['bt-abrir'])){
 
 			$stmt= $DB_con->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ORDER BY msg_hms");
 			$stmt->execute(array(':caso'=>$_SESSION['case']));
 
 			foreach ($stmt as $row){
-				print $row['msg_txt'] ."<br>";	
-
-			// while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-			// 	print $row['msg_txt']."\t";
-			// }
+				print $row['msg_txt'] ."<br>";
 			}
 
 		}

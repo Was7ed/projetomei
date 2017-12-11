@@ -6,28 +6,27 @@
 	if($login->islogincon()){
 	}else{ header('location: adm.log.php');}
 
-	if(isset($_GET['bt-logout'])){
+	if(isset($_POST['bt-logout'])){
 		$login->logoutcon();
 		header('location: adm.log.php');
 	}
-
 	$conRow= $login->consul();
+	$area=$login->area($conRow['con_atua']);
+	echo $conRow['con_atua'];
+	echo $area,"<br>"; 
 
-	if(isset($_GET['check'])){
-		echo $_GET['check'];
+	if(isset($_POST['check'])){
+		echo $_POST['check'];
 	}
 
-	$area=$login->area($conRow['con_atua']);
-	echo $area;
+	if(isset($_POST['bt-sol'])){
+		$ps->pegarcaso($conRow['con_atua']);
+	}
 
 ?>
 	<h3><?php echo 'BEM-VINDO AO SISTEMA ',$conRow['con_name']; ?></h3>
 
-	<p><?php
-		  
-	?></p>
-
-	<form method="get">
+	<form method="post">
 		<button type="submit" name="bt-sol">solicitar novo</button>
 	</form>
 
@@ -37,7 +36,7 @@
 		<button type="submit" name="bt-enviar">ENVIAR</button>
  	</form>
 
-	<form method="get">
+	<form method="post">
 		<button type="submit" name="bt-logout">LOGOUT</button>
 	</form>
 	

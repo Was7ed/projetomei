@@ -15,31 +15,16 @@ class Posave{
 	public function inserir($mtxt, $casoRow)
 	{
 		try{
-			$stmt= $this->db->prepare("INSERT INTO msg(ass_id, msg_txt) VALUES (:caso,:mtxt)");
+			$stmt= $this->db->prepare("INSERT INTO msg(ass_id, msg_txt, msg_hms) VALUES (:caso,:mtxt,now())");
 
 			$stmt->bindparam(":caso", $casoRow);
-      		$stmt->bindparam(":mtxt", $mtxt);            
+      		$stmt->bindparam(":mtxt", $mtxt);       
       		$stmt->execute();
 		}
 		catch(PDOException $e){
       		echo $e->getMessage();
     	}	 
 	}
-
-	/*public function showmsg($casoRow)								NÃO ESTÁ SENDO USADO NO MOMENTO
-	{
-		try{
-			$stmt= $this->db->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ORDER BY msg_hms");
-			$stmt->execute(array(':caso'=>$casoRow));
-			while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-				return  $row['msg_txt'];
-			}
-		}
-		catch(PDOException $e){
-			echo $e->getMessage(); 
-		}
-		
-	}*/
 
 
 /*           **********************************************************************************
@@ -85,7 +70,7 @@ class Posave{
 		try{
 
 			$stmt= $this->db->prepare("SELECT * FROM caso WHERE user_id=:uid AND ed_id=:area  AND ass_end IS NULL");
-    		$stmt->execute(array(':uid'=>$uid, ':area'=> $area));
+    		$stmt->execute(array(':uid'=>$uid, ':area'=>$area));
     		$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
     		
     		if($stmt->rowCount() != 0){
@@ -95,9 +80,8 @@ class Posave{
 		}
 		catch(PDOException $e){
       		echo $e->getMessage();
+      		return '0';
     	}
-    	echo 'n';
-    	//return '0';
 	}
 
 
@@ -105,11 +89,8 @@ class Posave{
 	{
 		try{
 
-			$stmt= $this->db->prepare("INSERT INTO caso(ass_end) WHERE ass_id=:aid VALUES (:aend");
+			$stmt= $this->db->prepare("INSERT INTO caso(ass_end) WHERE ass_id=:aid VALUES (now())");
 			$stmt->execute(array(':aid'=>$casoRow['ass_id']));
-
-			$stmt->bindparam(":aend", NOW());     
-      		$stmt->execute();
 
       		return 1;
 		}
@@ -118,5 +99,28 @@ class Posave{
       		return 0;
     	}
 	}
+
+	public function pegarcaso($area){
+		try{
+			echo $_SESSION['consultor'];
+			$stmt= $this->db->prepare("SELECT * FROM caso WHERE con_id IS NULL AND ed_id=:area  AND ass_end IS NULL");
+			$stmt->execute(array(':area'=>$area));
+
+			$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
+			$_SESSION['ccaso'] = $casoRow['ass_id'];
+
+			$stmt= $this->db->prepare("UPDATE caso SET con_id=:cid WHERE ass_id=:aid");
+			$stmt->bindparam(":cid", $_SESSION['consultor']);
+			$stmt->execute();
+
+			$stmt->execute(array(':aid'=>$casoRow['ass_id']));
+			
+			echo $_SESSION['consultor'];
+		}
+		catch(PDOException $e){
+			echo $e->getMessage(),"<br>";
+    	}
+	}
+
 }
 ?>

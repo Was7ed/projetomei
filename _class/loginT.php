@@ -64,6 +64,7 @@
     session_register_shutdown();
     session_unset();
     unset($_SESSION['user']);
+    unset($_SESSION['case']);
     header('location: entrar.php');
   }
 
@@ -179,6 +180,7 @@
     session_register_shutdown();
     session_unset();
     unset($_SESSION['consultor']);
+    unset($_SESSION['case']);
     header('location: adm.log.php');
   }
 
@@ -218,6 +220,7 @@
     return $areaRow['ed_nome'];
   }
  
+
 
 /*           **********************************************************************************
 *                               CÓDIGOS            DOS           ADMINISTRADORES
