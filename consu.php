@@ -12,7 +12,6 @@
 	}
 	$conRow= $login->consul();
 	$area=$login->area($conRow['con_atua']);
-	echo $conRow['con_atua'];
 	echo $area,"<br>"; 
 
 	if(isset($_POST['check'])){
@@ -23,15 +22,44 @@
 		$ps->pegarcaso($conRow['con_atua']);
 	}
 
+	if(isset($_POST['bt-enviar']) && isset($_SESSION['ccaso'])){
+		$rtxt= $_POST['resp'];
+ 		if(strlen($rtxt) < 144){
+ 			$ps->cinserir($rtxt);
+ 		}else{
+ 			echo 'Texto muito grande';
+ 		}
+	}
+
 ?>
 	<h3><?php echo 'BEM-VINDO AO SISTEMA ',$conRow['con_name']; ?></h3>
 
 	<form method="post">
-		<button type="submit" name="bt-sol">solicitar novo</button>
+		<?php if(!$ps->ccasoha()){?>
+		<br><button type="submit" name="bt-sol">solicitar novo</button><?php }else{?>
+		<br><button type="submit" name="bt-abrir">ABRA UM CASO</button><?php } ?>
 	</form>
 
+	<div ><?php
+		if(isset($_SESSION['ccaso'])){
+
+			$stmt= $DB_con->prepare("SELECT msg_txt FROM msg WHERE ass_id=:caso ORDER BY msg_hms");
+			$stmt->execute(array(':caso'=>$_SESSION['ccaso']));
+
+			$pdo= $DB_con->prepare("SELECT res_txt FROM resposta WHERE ass_id=:caso ORDER BY res_hms");
+			$pdo->execute(array(':caso'=>$_SESSION['ccaso']));
+
+			foreach ($stmt as $row){
+				print $row['msg_txt'] ."<br>";
+			}
+			foreach ($pdo as $rowc){
+				print $rowc['res_txt'] ."<br>";
+			}
+		}
+	?></div>
+
 	<form method="post" action="">
-		<input required type="text" name="msg" placeholder="Envie sua mensagem"><br>
+		<input required type="text" name="resp" placeholder="Envie sua mensagem"><br>
 		
 		<button type="submit" name="bt-enviar">ENVIAR</button>
  	</form>

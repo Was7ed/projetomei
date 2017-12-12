@@ -103,11 +103,17 @@
     return $userRow['user_name'];
   }
 
-  public function newpass(){
+/*
+*   MUDAR A SENHA
+*/
+  public function newpass($npass){
 
     try{
-      $stmt= $this->db->preapre("ALTER TABLE users WHERE user_id=:uid  LIMIT 1");
+      $stmt= $this->db->preapre("UPDATE users SET user_pass=:npass WHERE user_id=:uid LIMIT 1");
       $stmt->execute(array(':uid'=>$_SESSION['user']));
+
+      $pdo->bindparam(":npass", $npass);            
+      $pdo->execute(); 
 
     }
     catch(PDOException $e){
@@ -180,7 +186,7 @@
     session_register_shutdown();
     session_unset();
     unset($_SESSION['consultor']);
-    unset($_SESSION['case']);
+    unset($_SESSION['ccase']);
     header('location: adm.log.php');
   }
 

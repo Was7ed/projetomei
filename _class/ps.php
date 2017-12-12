@@ -20,6 +20,27 @@ class Posave{
 			$stmt->bindparam(":caso", $casoRow);
       		$stmt->bindparam(":mtxt", $mtxt);       
       		$stmt->execute();
+      		echo 'texto enviado';
+		}
+		catch(PDOException $e){
+      		echo $e->getMessage();
+    	}	 
+	}
+
+/*           **********************************************************************************
+*                               CÓDIGOS            DOS           MENSAGENS
+*            **********************************************************************************
+*/
+
+	public function cinserir($rtxt)
+	{
+		try{
+			$stmt= $this->db->prepare("INSERT INTO resposta(ass_id, res_txt, res_hms) VALUES (:caso,:rtxt,now())");
+
+			$stmt->bindparam(":caso", $_SESSION['ccaso']);
+      		$stmt->bindparam(":rtxt", $rtxt);       
+      		$stmt->execute();
+      		echo 'texto enviado';
 		}
 		catch(PDOException $e){
       		echo $e->getMessage();
@@ -102,25 +123,70 @@ class Posave{
 
 	public function pegarcaso($area){
 		try{
-			echo $_SESSION['consultor'];
 			$stmt= $this->db->prepare("SELECT * FROM caso WHERE con_id IS NULL AND ed_id=:area  AND ass_end IS NULL");
 			$stmt->execute(array(':area'=>$area));
-
 			$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
 			$_SESSION['ccaso'] = $casoRow['ass_id'];
 
-			$stmt= $this->db->prepare("UPDATE caso SET con_id=:cid WHERE ass_id=:aid");
-			$stmt->bindparam(":cid", $_SESSION['consultor']);
-			$stmt->execute();
-
-			$stmt->execute(array(':aid'=>$casoRow['ass_id']));
+			$pdo= $this->db->prepare("UPDATE caso SET con_id=:cid WHERE ass_id=:aid");
+			$pdo->execute(array(':aid'=>$casoRow['ass_id'], ':cid'=>$_SESSION['consultor']));
 			
-			echo $_SESSION['consultor'];
+			if($stmt->rowCount() > 0){
+				echo 'VOCÊ PEGOU O CASO DE NUMERO' . $_SESSION['ccaso'];
+			}
 		}
 		catch(PDOException $e){
 			echo $e->getMessage(),"<br>";
     	}
 	}
 
+/**
+ *  ABRIR CASO PARA CONSULTOR
+*/
+	// public function cabrir($area)
+	// {
+	// 	try{
+
+	// 		$stmt= $this->db->prepare("SELECT * FROM caso WHERE con_id=:cid AND ed_id=:area AND ass_end IS NULL LIMIT 1");
+ //    		$stmt->execute(array(':cid'=>$_SESSION['consultor'], ':area'=> $area));
+ //    		$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
+	// 		$_SESSION['ccase']= $casoRow['ass_id'];
+
+	// 		//PEGAR O NOME
+	// 		$PDO= $this->db->prepare("SELECT * FROM users WHERE user_id=:uid");
+	// 		$PDO->execute(array(':uid'=>$casoRow['user_id']));
+	// 		$name = $PDO->fetch(PDO::FETCH_ASSOC);
+
+	// 		echo 'RESPONDA AO '. $name['user_name'];
+	// 	}
+	// 	catch(PDOException $e){
+ //      		echo $e->getMessage();
+ //    	}
+	// }
+
+
+	public function ccasoha(){
+		try{
+
+			$stmt= $this->db->prepare("SELECT * FROM caso WHERE con_id=:cid AND ass_end IS NULL");
+    		$stmt->execute(array(':cid'=>$_SESSION['consultor']));
+    		$casoRow = $stmt->fetch(PDO::FETCH_ASSOC);
+    		$_SESSION['ccaso']=$casoRow['ass_id'];
+
+    		//PEGAR O NOME
+			$PDO= $this->db->prepare("SELECT * FROM users WHERE user_id=:uid");
+			$PDO->execute(array(':uid'=>$casoRow['user_id']));
+			$name = $PDO->fetch(PDO::FETCH_ASSOC);
+
+    		if($stmt->rowCount() != 0){
+				echo 'RESPONDA AO '. $name['user_name'];
+				return true;
+			}
+		}
+		catch(PDOException $e){
+      		echo $e->getMessage();
+      		return false;
+    	}
+	}
 }
 ?>
