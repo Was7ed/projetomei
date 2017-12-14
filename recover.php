@@ -37,7 +37,7 @@ if(isset($_POST['btn-enviar'])){
     
     <input required type="email" name="mail" placeholder="Email"><br>
 
-    <input type="text" name="mensagem" placeholder="escreve ai tio"><br>
+    <input type="text" name="mensagem" placeholder="Mensagem de teste"><br>
 
     <button type="submit" name="btn-enviar" >Enviar</button>
   </form>
