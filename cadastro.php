@@ -1,6 +1,6 @@
 <?php 
-	require_once '_ref/header.php';
-  require_once 'conexao.php';
+	require_once '_class/conexao.php';
+  require_once '_ref/header.php';
 
   if($login->islogin()){
     header('location: chat.php');

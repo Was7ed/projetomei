@@ -1,5 +1,5 @@
 <?php
-  require_once 'conexao.php';
+  require_once '_class/conexao.php';
   require_once '_ref/header.php';
 
 if(isset($_POST['btn-enviar'])){
