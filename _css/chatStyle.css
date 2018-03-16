@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+#container-master {
+	display: flex;
+}
+
+#container-menu {
+	display: block;
+	background-color: lightgrey;
+	height: 100vh;
+	width: 20vw;
+	min-width: 190px;
+	-webkit-box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75);
+	box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75); 
+}
+
+#container-menu h3 {
+	text-align: center;
+}
+
+#container-menu form{
+	margin-left: 10px;
+}
+
+#container-menu form input{
+	margin-bottom: 10px;
+}
+
+#container-menu form button{
+	margin-top: 20px;
+	margin-left: auto:
+}
+
+#container-menu #logout-button{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	width: 20vw;
+	background-color: grey;
+	color: white;
+	font-size: 1.5em;
+	border: none;
+}
+
+
+#container-chat {
+	height: 100vh;
+	width: 80vw;
+	min-width: 630px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+#container-chat #chat-box{
+	min-width: 580px;
+	overflow: auto; 
+	justify-content: ;
+	border-radius: 5px;
+	border: solid lightgrey 1px;
+	height: 70vh;
+	width: ;
+	margin: 5px;
+}
+
+#container-chat #chat-box #control-div{	
+	margin-top: auto;
+	width: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-self: ;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#container-chat #chat-box #control-div .msg{
+	width: ;
+	display: ;
+	margin-right:  auto; 
+	padding: 10px;	
+	margin: 5px;	
+}
+
+#container-chat #chat-box #control-div .cliente{
+	color: white;
+	align-self: flex-end;
+	background-color: #385ea8;
+	text-align: right;
+	border-radius: 20px 10px 0px 20px;
+}
+
+#container-chat #chat-box #control-div .consultor{
+	align-self: flex-start;
+	color: black;
+	background-color: lightgrey;
+	text-align: left;
+	border-radius: 10px 20px 20px 0px;
+}
+
+#container-chat span{
+	min-width: 580px;
+	padding: 0 ; 
+}
+
+#container-chat span form div{
+	padding: 0;
+}
+
+#container-chat span div{
+	padding: 0;
+}
+
+.alert{
+	display: none;
+	position: absolute;
+	width: 98vw;
+	z-index: 10;
+    left: 1vw;
+    top: 25px;
+    -webkit-box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75);
+	box-shadow: 7px 1px 21px -5px rgba(0,0,0,0.75); 
+	text-align: center;
+}
+
+

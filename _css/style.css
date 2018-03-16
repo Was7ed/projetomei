@@ -6,76 +6,68 @@
 */	margin: 0;
 	padding: 0;
 	font-family: arial;
-	overflow-x: hidden;
 }
 
 *:focus {
     outline: none;
 }
 
-header {
+body{
+	overflow-x: hidden;
 	width: 100vw;
 }
 
-header nav {
-	display: flex;
-	position: fixed;
-	width: 100vw;
-	height: 60px;
-	background-color: #385ea8;
-	color: white;
-	z-index: 10;
-	box-shadow: 0px 1px 10px #000;
+nav a{
+	color: #fff !important;
 }
 
-header nav div{
-	margin-top: 5px;
+nav a:hover{
+	background-color: #3a4ec1 !important;
+}
+
+.navbar-inverse{
+	background-color: #385ea8 !important;
+}
+
+.navbar-toggle{
+	border-color: white !important;
+}
+
+.navbar-toggle:hover{
+	background-color: rgba(0,0,0,0.2)!important;
+}
+
+.navbar-brand {
+	padding: 0!important;
 	margin-left: 10px;
+	margin-right: 20px;
 }
 
-header nav ul{
-	margin: auto 0 auto auto;
+.navbar-brand img{
+	height: 50px;
 }
 
-header nav ul a{
-	text-transform: none;
-	text-decoration: none;
-	color: inherit;
-}
-
-header nav ul li{
-	display: inline;
-	margin: 30px;
-}
-
-header nav div img{
-	max-height: 50px;
-}
-
-header nav span{
-	display: none;
-}
-
-header nav #side_menu{
-	display: none;
-}
-
-header nav #side_menu{
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -0px!important;
 }
 
 
 /* Aqui será feito o estilo da primeira sessão*/
 
+#primeiro{
+	width: 100vw;
+}
+
 #primeiro div{
-	margin-top: 1px;
-	background-image: url('../_img/landing-background-logo.jpg');
+/*	margin-top: 1px;
+*/	background-image: url('../_img/landing-background-logo.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center; 
+	text-align: center;
 	color: white;
 	position: relative;
 	top: ;
@@ -105,12 +97,17 @@ header nav #side_menu{
 	border:none;
 }
 
+#primeiro div button:hover {
+	background-color: #3a4ec1;
+}
+
 
 
 /*Inicio da segunda sessão */
 
 #segundo .container {
-	max-width: 100vw;
+	padding: 0;
+	width: 100%;
 }
 
 #segundo .container h2{
@@ -121,7 +118,9 @@ header nav #side_menu{
 }
 
 #segundo .container #master-div{
-	display: flex;
+	padding: 0;
+	margin: 0;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -129,7 +128,7 @@ header nav #side_menu{
 	height: ;
 /*	border: solid #385ea8 1px;
 */	border-radius: 4px;
-	width: 100vw;
+	width: ;
 	margin-top: 100px;
 	overflow-y: hidden;
 	/*padding: 30px 0 20px 0;*/
@@ -157,7 +156,7 @@ header nav #side_menu{
 	margin: auto;
 	margin-top: 30px;
 	height: auto;
-	padding: 20px;
+	padding: 10px;
 	width: 95vw;
 	border-radius: 5px;
 	background-color: #385ea8;
@@ -168,25 +167,31 @@ header nav #side_menu{
 /*Terceira sessão (onde irão ficar os celulares)*/
 
 .telasCelulares{
+	margin-top: 40px;
 	height: ;
 	width: ;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	align-items: ;
+	justify-content: ;
 }
 
 
-.telasCelulares .celular{
-	display: flex;
-	float: left;
+.telasCelulares img{
+	max-height: 310px;
+	align-self: center;
+	height: auto;
+
+	/*display: flex;
 	margin: 30px;
-	height: 330px;
 	width: 170px;
-/*	background-image: url('../_img/celular.png');
-*/	background-size: contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	margin-left: 30px;
-	z-index: 1;
+	z-index: 1;*/
+}
+
+.telasCelulares .direito{
+	float: right;
 }
 
 /*.telasCelulares .celular div{
@@ -204,10 +209,8 @@ header nav #side_menu{
 	border: solid #385ea8 1px;
 	text-align: center;
 	border-radius: 5px;
-	margin-right: 140px;
-	margin: 30px;
 	float: right;
-	height: ;
+	max-height: 310px ;
 	padding: 30px;
 	margin-right: ;
 }
@@ -234,18 +237,24 @@ header nav #side_menu{
 	font-size: 20px;
 }
 
-.direito .celular{
-	display: flex;
-	float: left;
-/*	background-image: url('../_img/celular.png');
-*/	background-size: contain;
+.telasCelulares .info button:hover{
+	background-color: #385ea8;
+	color: white;
+}
+
+/*.direito .celular{
+	height: auto;
+	display: block;
+	float: ;
+	background-image: url('../_img/celular.png');
+	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 30px ;
 	z-index: 1;
-}
+}*/
 
 .direito .info{
-	float: left;
+	float: ;
 }
 
 #bridge-cel {
@@ -267,7 +276,7 @@ header nav #side_menu{
 
 /*Aqui começa o footer*/
 #footer #depoimentos .owl-item {
-	display: flex;
+	display: block;
 	justify-content: center;
 }
 
@@ -281,7 +290,7 @@ header nav #side_menu{
 	height: auto;
 	border-top: solid #a6a6a6 2px;
 	border-bottom: solid #a6a6a6 2px;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	justify-content: center;
 
@@ -292,12 +301,47 @@ header nav #side_menu{
 	color:#385ea8;
 }
 
-#footer #depoimentos #depo-carousel{
-	height: auto;
+#footer #depoimentos .img-depo{
+	z-index: 10;
+}
+
+#footer #depoimentos .img-depo img{
+	z-index: 10;
+	display: block;
+	height: 200px;
+	margin-left: auto;
+	margin-right: ;
+}
+
+#footer #depoimentos .txt-depo-container{
+	height: 200px;
+	z-index: 1;
+}
+
+#footer #depoimentos .txt-depo{
+	z-index: 1;
+	display: block;
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	background-color: #385ea8;
+	padding: 10px;
+	padding-left: 40px;
+	color: white;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#footer #depoimentos .txt-depo p{
+	font-size: 18px;
 }
 
 #footer #novidades{
-	margin-top: 100px;
+	margin-top: 5%;
+}
+
+#footer #novidades #noticias-carousel{
+
 }
 
 #footer #novidades #noticias-carousel .item{
@@ -305,44 +349,52 @@ header nav #side_menu{
 	text-align: center;
 }
 
+#footer #novidades #noticias-carousel .item img{
+	height: 100px;
+}
+
 #footer #novidades #noticias-carousel .item p{
 	margin-top: 10px;
 }
 
-#footer #footer-footer .footer-text{
+#footer #footer-footer .footer-ending{
+	margin: auto;
 	margin-top: 100px;
-	height: 50px;
+	height: ;
 	border-bottom: none;
+	border-top: solid #385ea8 1px;
 }
 
-#footer #footer-footer .footer-text ul{
+#footer #footer-footer .footer-ending ul{
+	width: 100%;
 	display: inline-block;
 	font-size: 20px;
 	margin: auto;
 }
 
-#footer #footer-footer .footer-text a{
+#footer #footer-footer .footer-ending a{
 	text-transform: none;
 	text-decoration: none;
 	color: black;
 
 }
 
-#footer #footer-footer .footer-text li{
+#footer #footer-footer .footer-ending li{
 	display: inline;
-	margin-right: 100px;
-	margin-left: 100px;
 }
 
-#footer #novidades #noticias-carousel .item img{ 
-	margin:20px 0 20px 0;
-<<<<<<< HEAD
-=======
+#footer #footer-footer .footer-ending #pol-de-privacidade{
+	float: right;	
 }
 
 
 
-/* CSS da página de entrada */
+
+/*
+***********************************************
+***** CSS das páginas de login e cadastro *****
+***********************************************
+ */
 
 #entrar_container{
 	height: 100vh;
@@ -366,7 +418,8 @@ header nav #side_menu{
 	margin-top: 20px;
 	border: none;
 	padding: 10px;
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 	border-radius: 3px;
 }
 
@@ -405,18 +458,26 @@ header nav #side_menu{
 	justify-content: center;
 }
 
+
 #cadastro_master{
-	padding: 40px;
+	padding: 30px;
 	background-color: rgba(0 , 0 , 0 , 0.2);
 	border-radius: 7px;
 	text-align: center;
 	box-shadow: 6px 6px 5px #888888;
+	max-width: ;
 }
+
+#cadastro_master h1{
+	font-size: 2em;
+}
+
 #cadastro_master input{
 	margin-top: 20px;
 	border: none;
 	padding: 10px;
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 	border-radius: 3px;
 }
 
@@ -442,5 +503,304 @@ header nav #side_menu{
 
 #cadastro_master form a p{
 	margin-top: 5px;
->>>>>>> parent of b343435... Tentativa de colocar o bootstrap
 }
+
+
+/*
+***************************************************
+***** INICIO DO CSS RESPONSIVO ********************
+***************************************************
+*/
+@media (max-width: 992px) {
+	.telasCelulares{
+		margin-top: 40px;
+		height: ;
+		width: ;
+		display: block;
+		align-items: ;
+		justify-content: ;
+	}
+
+
+	.telasCelulares img{
+		max-height: 310px;
+		align-self: center;
+		height: auto;
+	}
+
+	.telasCelulares .direito{
+		float: right;
+	}
+
+	.telasCelulares .info{
+		margin-left:  30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 55vw;
+		border: solid #385ea8 1px;
+		text-align: center;
+		border-radius: 5px;
+		float: right;
+		max-height: 310px ;
+		padding: 30px;
+		margin-right: ;
+	}
+
+	.telasCelulares .info h3{
+		margin-bottom: auto;
+		font-weight: bold;
+		font-size: 32px;
+	}
+
+	.telasCelulares .info p{
+		margin-bottom: auto;
+		font-size: 16px;
+	}
+
+	.telasCelulares .info button{
+		margin-top: 80px;
+		height: 100px;
+		width: 150px;
+		background-color: white;
+		border: solid #385ea8 2px;
+		border-radius: 10px;
+		color: #385ea8;
+		font-size: 12px;
+	}
+
+	.telasCelulares .info button:hover{
+		background-color: #385ea8;
+		color: white;
+	}
+
+		#footer #depoimentos .img-depo img{
+		z-index: 2;
+		display: block;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#footer #depoimentos .txt-depo-container{
+		z-index: 1;
+		height: 130px;
+	}
+
+	#footer #depoimentos .txt-depo{
+		z-index: 1;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: none;
+		height: ;
+		background-color: #385ea8;
+		padding: 10px;
+		color: white;
+		margin-top: 10px;
+	}
+
+	#footer #depoimentos .txt-depo p{
+
+	}
+}
+
+
+
+@media (max-width: 767px) {
+    #primeiro div h2{
+		font-size: 20px;
+	}
+
+	#primeiro div h3{
+		font-size: 13px;
+	}
+
+	#primeiro div button {
+		width: 150px;
+		height: 50px;
+		border-radius: 6px;
+		margin-right:  auto;
+		margin-left: auto;
+		margin-top: 20px;
+		background-color: #385ea8;
+		color: white;
+		font-size: 17px;
+		border:none;
+	}
+
+	#segundo .container h2{
+		font-size: 24px;
+	}
+
+	#segundo .container #master-div{
+		margin-top: 20px;
+	}
+
+	.blue-label{
+		margin-top: 30px;
+		height: auto;
+		padding: 2px;
+		width: 95vw;
+		text-align: center;
+		color: white;
+	}
+
+	.blue-label h4{
+		font-size: 10px;
+	}
+
+	.telasCelulares .direito{
+		float: none;
+	}
+
+	.telasCelulares{
+		margin-top: 40px;
+		height: ;
+		width: ;
+		display: block;
+		justify-content: ;
+	}
+
+
+	.telasCelulares img{
+		display: block;
+		max-height: 310px;
+		height: auto;
+		margin-left: auto;
+   		margin-right: auto;
+
+		/*display: flex;
+		margin: 30px;
+		width: 170px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: 30px;
+		z-index: 1;*/
+	}
+
+	.telasCelulares .info{
+		padding: auto !important;
+		margin-top: 15px ;
+		display: block;
+		flex-direction: ;
+		align-items: center;
+		justify-content: center;
+		border: solid #385ea8 1px;
+		width: 100%;
+		text-align: center;
+		align-self: center;
+		border-radius: 5px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.telasCelulares .info h3{
+		margin-bottom: auto;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.telasCelulares .info p{
+		margin-bottom: auto;
+		font-size: 12px;
+	}
+
+	.telasCelulares .info button{
+		margin-top: 30px;
+		height: 25px;
+		width: 120px;
+		background-color: #385ea8;
+		border: solid #385ea8 2px;
+		color: #fff;
+		font-size: 13px;
+	}
+
+	.telasCelulares .info button:hover{
+		margin-top: 30px;
+		height: 25px;
+		width: 120px;
+		background-color: white;
+		border: solid #385ea8 2px;
+		color: #385ea8;
+		font-size: 13px;
+	}
+
+	#footer #depoimentos .img-depo img{
+		z-index: 2;
+		display: block;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#footer #depoimentos .txt-depo-container{
+		z-index: 1;
+		height: 130px;
+	}
+
+	#footer #depoimentos .txt-depo{
+		z-index: 1;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: none;
+		height: ;
+		background-color: #385ea8;
+		padding: 10px;
+		color: white;
+		margin-top: 10px;
+	}
+
+	#footer #depoimentos .txt-depo p{
+
+	}
+
+	.footer-text{
+		margin: 10px;
+		margin-top: 20px;
+		font-size: 28px;
+		height: auto;
+		border-top: solid #a6a6a6 2px;
+		border-bottom: solid #a6a6a6 2px;
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	#footer #footer-footer .footer-ending{
+		margin: auto;
+		margin-top: 100px;
+		height: ;
+		border-bottom: none;
+		border-top: solid #385ea8 1px;
+	}
+
+	#footer #footer-footer .footer-ending ul{
+		width: 100%;
+		display: inline-block;
+		font-size: 12px;
+		margin: auto;
+	}
+
+	#footer #footer-footer .footer-ending a{
+		text-transform: none;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	#footer #footer-footer .footer-ending li{
+		display: inline;
+	}
+
+	#footer #footer-footer .footer-ending #pol-de-privacidade{
+		float: right;	
+	}
+}
+
+

@@ -13,10 +13,10 @@ $('#section2-car').owlCarousel({
         0:{
             items:1
         },
-        700:{
-            items:2
+        768:{
+            items:3
         },
-        1000:{
+        992:{
             items:3
         }
     }
@@ -40,12 +40,12 @@ $('#footer-car').owlCarousel({
             margin:50,
             stagePadding: 10
         },
-        700:{
+        768:{
             items:2,
             margin:50,
             stagePadding: 10
         },
-        1000:{
+        992:{
             items:3
         }
     }
@@ -68,12 +68,12 @@ $('#noticias-car').owlCarousel({
             margin:50,
             stagePadding: 10
         },
-        700:{
+        768:{
             items:2,
             margin:50,
             stagePadding: 10
         },
-        1000:{
+        992:{
             items:3
         }
     }
